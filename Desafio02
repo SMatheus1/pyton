@@ -45,7 +45,7 @@ for tentativa in range(1,tentativas+1): #Adiconar mais 1 ao range
         break
         
             
-    elif (secreto_num == secreto_num):
+    elif (palpite == secreto_num):
         print("Você acertou miseravi")
         break #Encerra o jogo (Encerra o if a repetição)
     elif(palpite < secreto_num):
