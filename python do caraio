@@ -1,0 +1,30 @@
+print(25*"#")
+print("Descubra o prato secreto")
+print(25*"#")
+print("")
+print(43*"#")
+print("Você é capaz de descobrir o prato secreto?")
+print("Os pratos sao , lasanha , frango empanado, empadinha, linguiça, bala")
+print(43*"#")
+
+import random
+pratos = ['lasanha', 'frango empanado', 'empadinha', 'linguiça', 'bala']
+pratos_scret = random.choice(pratos)
+tentativas = 5
+controle = 1
+
+while controle <= tentativas:
+    print(f"Tentativa {controle} de {tentativas}")
+    palpite = (input("Informe seu palpite: "))
+    print("Seu palpite é: {}".format(palpite))
+    if (pratos_scret == palpite):
+        print("Você acertou miseravi")
+        break
+    else: 
+        print("Você errou miseravi")
+    if(controle == 5):
+        print(pratos_scret)
+        print("Você perdeu")
+    controle += 1
+
+print("Fim de jogo")
