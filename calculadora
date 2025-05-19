@@ -1,0 +1,37 @@
+num = 0
+dois = 0
+
+def soma(x, y):
+    return x + y
+def sub(x, y):
+    return x - y
+def mult(x, y):
+    return x * y
+def div(x, y):
+    return x / y
+
+print("Escolha a operaçao desejada: \n") 
+print("1-soma")
+print("2-subtração")
+print("3-multiplicação")
+print("4-divisão")
+
+viagem = input("Escolha uma das opçao: \n")
+print(f"Voce escolheu a opçao:{viagem}")
+
+numum = int(input("Digite o primeiro numero: \n"))
+numdois = int(input("Digite o segundo numero: \n"))
+
+if viagem == '1':
+    print(numum, "+",numdois,"=",soma(numum, numdois))
+elif viagem == '2':
+    print(numum, "-",numdois,"=",sub(numum, numdois))
+elif viagem == '3':
+    print(numum, "x",numdois,"=",mult(numum, numdois))
+elif viagem == '4':
+    if numdois == 0:        
+        print("Nao e possivel divisao com zero")
+    else:
+        print(numum, "/",numdois,"=", div(numum, numdois))
+else:
+    print("Operaçao invalida")
